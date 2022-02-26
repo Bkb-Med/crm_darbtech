@@ -3,5 +3,6 @@
 from odoo import models, fields, api
 
 class crm_darbtech(models.Model):
-#     class crm_test_darbtech(models.Model):
-     pass
+#     Reminder Form Adjustement
+   _inherit = 'crm.lead'
+   reminder_date = fields.Date()
