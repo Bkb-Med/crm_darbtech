@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+  <data>
+    <record  id="crm_darbtech_crm_qualification" model="ir.ui.view">
+      <field name="name">partner qualification </field>
+      <field name="model">res.partner</field>
+      <field name="inherit_id" ref="base.view_partner_form" />
+      <field name="arch" type="xml">
+       <notebook position="inside">
+          <page name="crm_qualification" string="CRM Qualification">
+            <field name="leads_qualification" >
+            <tree>
+                <field name="name" />
+                <field name="reminder_date" widget="date"/>
+            </tree>
+            </field>
+            </page>
+        </notebook>         
+      </field>
+    </record>
+  </data>
+</odoo>

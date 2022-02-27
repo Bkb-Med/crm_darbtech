@@ -26,7 +26,7 @@
         # 'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
-  
+        'views/crm_qualification.xml',
     ],
     # only loaded in demonstration mode
     "qweb": [
