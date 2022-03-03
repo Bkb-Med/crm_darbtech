@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-
+<!-- CRM qualification Tab-->
 <odoo>
   <data>
     <record  id="crm_darbtech_crm_qualification" model="ir.ui.view">

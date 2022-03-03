@@ -1,12 +1,19 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "CRM Darbtech [test]",
+    'name': "CRM Qualification [Darbtech_test]",
 
     'summary': """
-       CRM Odoo extensions [Darbtech]""",
+       CRM Qualification extensions _Darbtech test
+       """,
 
     'description': """
-        Long description of module's purpose
+        
+        CRM extensions 
+       Adj1: Autocomplete field
+       Adj2: Reminder Date
+       Adj3: Notification (Qualifications)
+       Adj4: Qualifications
+       Adj5: Wizard 
     """,
 
     'author': "Boukbab M'hamed",
@@ -23,10 +30,17 @@
     
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
+        #security
+        'security/ir.model.access.csv',
+        #wizard
+        'wizard/leads_template_wizard.xml',
+        #views
+        'views/crm_reminder_autocomplete.xml',
+        'views/crm_systray_templates.xml',
         'views/crm_qualification.xml',
+        'views/crm_action_leads_wizard.xml',
+        
+        
     ],
     # only loaded in demonstration mode
     "qweb": [

@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_crm_darbtech_crm_darbtech,crm_darbtech.crm_darbtech,model_crm_darbtech_crm_darbtech,,1,0,0,0
+access_crm_create_newlead_wizard,crm.create.newlead.wizard,model_crm_create_newlead_wizard,,1,1,1,1

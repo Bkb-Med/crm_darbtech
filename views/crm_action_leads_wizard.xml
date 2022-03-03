@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- new lead popup action -->
+<odoo>
+	<menuitem id="crm_menu_lds" name="New Lead" parent="crm.crm_menu_leads" action="crm_create_newlead_wizard_action" sequence="20" />
+</odoo>

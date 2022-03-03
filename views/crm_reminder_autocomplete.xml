@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- reminder date Tab & Autocomplete field-->
+<odoo>
+	<data>
+		<record id="crm_reminder_extensions" model="ir.ui.view">
+			<field name="name">crm.reminder.extensions</field>
+			<field name="model">crm.lead</field>
+			<field name="inherit_id" ref="crm.crm_case_form_view_leads" />
+			<field name="arch" type="xml">
+				<page name="extra" position="after">
+					<page name="reminder" string="Reminder">
+						<group>
+							<field name="reminder_date" placeholder="choose date..." />
+						</group>
+					</page>
+				</page>
+				<field name="partner_id" position="attributes">
+					<attribute name="groups"/>
+				</field>
+			</field>			
+		</record>
+	</data>
+</odoo>

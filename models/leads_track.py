@@ -1,10 +1,13 @@
-
+# -*- coding: utf-8 -*-
 
 from odoo import  api , models
 from datetime import date
-class Users(models.Model):
-    _inherit = ['res.users']
 
+class Users(models.Model):
+#----------------------------------------------------------------
+# Systray Menu (Outdated-today-upcoming) qualifications BackEnd -                                  -
+#----------------------------------------------------------------    
+    _inherit = ['res.users']
     @api.model
     def getLeads(self):
         

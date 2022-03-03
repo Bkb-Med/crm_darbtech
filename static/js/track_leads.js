@@ -1,3 +1,6 @@
+//-----------------------------------------------------------------
+// Systray Menu (Outdated-today-upcoming) qualifications FrontEnd -                                  -
+//-----------------------------------------------------------------
 odoo.define("crm_darbtech.leadsTrack", function (require) {
   "use strict";
   var core = require("web.core");
@@ -11,14 +14,12 @@ odoo.define("crm_darbtech.leadsTrack", function (require) {
     events: {
        "show.bs.dropdown": "leadWidget_Update",
     },
-    
     start: function () {
       this._$leadsPreview = this.$(".o_mail_systray_dropdown_items");
       this.counter_Update();
       this.leadWidget_Update();
       return this._super();
     },
-    
     counter_Update: function (data) {
       if (data) {
         if (data.lead_created) {
@@ -32,7 +33,6 @@ odoo.define("crm_darbtech.leadsTrack", function (require) {
     },
     data_Get: function () {
       var that = this;
-
       return that
         ._rpc({
           model: "res.users",
@@ -51,8 +51,6 @@ odoo.define("crm_darbtech.leadsTrack", function (require) {
           
         });
     },
-    
-    
     leadWidget_Update: function () {
       var that = this;
       that.data_Get().then(function () {
@@ -63,13 +61,9 @@ odoo.define("crm_darbtech.leadsTrack", function (require) {
         );
       });
     },
-    
-  
 
-   
-   
   });
-  LeadWidget.prototype.sequence = 100;
+  LeadWidget.prototype.sequence = 50;
   SystrayMenu.Items.push(LeadWidget);
   return LeadWidget;
 });
