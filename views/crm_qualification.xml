@@ -9,7 +9,7 @@
       <field name="arch" type="xml">
        <notebook position="inside">
           <page name="crm_qualification" string="CRM Qualification">
-            <field name="leads_qualification" >
+            <field name="client_qualification" >
             <tree>
                 <field name="name" />
                 <field name="reminder_date" widget="date"/>
