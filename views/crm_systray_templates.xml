@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- template for systray menu-->
+<!-- template for systray menu -->
 <odoo>
-   <template id="assets_backend" name="assets" inherit_id="web.assets_backend">
-       <xpath expr="." position="inside">
-           <script type="text/javascript" src="/crm_darbtech/static/js/track_leads.js"/>
-       </xpath>
-   </template>
+	<template id="assets_backend" name="assets" inherit_id="web.assets_backend">
+		<xpath expr="." position="inside">
+			<script type="text/javascript" src="/crm_darbtech/static/js/track_leads.js" />
+		</xpath>
+	</template>
 </odoo>

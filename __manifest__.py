@@ -42,6 +42,7 @@
         
         
     ],
+    "xmlDependencies": ['/crm_darbtech/static/xml/systray.xml'],
     # only loaded in demonstration mode
     "qweb": [
       "static/xml/systray.xml",
